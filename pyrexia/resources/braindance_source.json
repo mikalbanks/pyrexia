@@ -1,0 +1,26 @@
+{
+  "citation": "Robbins, A., et al. (2025). Zenodo, version v2. https://doi.org/10.5281/zenodo.17684862",
+  "doi": "10.5281/zenodo.17684862",
+  "license": "CC-BY-4.0",
+  "limitations": [
+    "The landing page describes 19 organoids and 432 cycles; the pinned v2 file contains 16 organoid IDs and 426 runs across 38 experiments. Computed file counts are displayed.",
+    "The README describes reward as time balanced, while phases.py accumulates environment step rewards. Values are displayed in source reward units, not wall-clock seconds.",
+    "This is a descriptive secondary analysis of published processed run summaries. It does not reproduce raw electrophysiology preprocessing, the full paper analysis, or establish causal biological learning.",
+    "Repeated runs are aggregated within organoid and condition before comparing organoids. Culture batch, order, training carryover, and unequal run counts can confound comparisons."
+  ],
+  "metric": "Published run-level top_decile (mean reward in top 10% of episodes), preserved without reinterpretation.",
+  "normalized_sha256": "50e26eae9ad4c0c7bd04f8d77fa57e1fee985b6dc23bd1d8b4de4cbed0f58f0b",
+  "normalizer": "scripts/prepare_braindance.py; reviewed source hash plus inert restricted pickle decoding; no publisher code or NumPy constructors executed",
+  "source_episode_count": 49796,
+  "source_experiment_count": 38,
+  "source_kind": "published_biological_recording_summary",
+  "source_md5": "af99f1f859136ca4a6dad47a1aa7c86d",
+  "source_organoid_count": 16,
+  "source_run_count": 426,
+  "source_sha256": "e84484e116187448dbba1c6860c5970b6ae2bc7a58f20b3a1525d0b5dedb0fd5",
+  "source_url": "https://zenodo.org/records/17684862/files/aggregated_experiment_data.pkl?download=1",
+  "title": "Goal-Directed Learning in Cortical Organoids - Experimental Data and Code",
+  "transform": "Retained experiment/organoid metadata and run-level published top_decile; counted reward-log episodes and averaged raw episode rewards. Baseline/causal arrays and game logs omitted.",
+  "units": "source reward units; no conversion to seconds",
+  "url": "https://zenodo.org/records/17684862"
+}
